@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLoginScreen.LogInPage"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:sfavatar="clr-namespace:Syncfusion.XForms.AvatarView;assembly=Syncfusion.Core.XForms"
+             BackgroundColor="#181415">
+    <ContentPage.Content>
+        <!-- Main structure-->
+         <Grid RowDefinitions="*,*">
+            <!--Main image-->
+            <Image Grid.Row="0"  Source="Model" VerticalOptions="Start" Aspect="AspectFill"/>
+            <!-- Main information-->
+            <Label Grid.Row="0" Text="Log In" FontSize="36" TextColor="White" FontAttributes="Bold" Padding="20,0,0,30" VerticalOptions="CenterAndExpand"/>
+            
+            <Frame Grid.Row="0" Grid.RowSpan="2" HasShadow="False" Padding="25,50" Margin="10,0,10,40" VerticalOptions="CenterAndExpand" CornerRadius="20" Opacity="0.9" BackgroundColor="#2e2b2c">
+                <Grid ColumnDefinitions="Auto,*" RowDefinitions="*,Auto,Auto,Auto,Auto" RowSpacing="15">
+                     <sfavatar:SfAvatarView ContentType="Custom" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"
+                           ImageSource="Profile"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"   
+                           HeightRequest="70"
+                           CornerRadius="35"
+                           WidthRequest="70"
+                           Margin="0,0,20,0"/>
+                    <!-- Avatar information-->
+                    <Label Grid.Column="1" Grid.Row="0" Text="Jane Dow" FontAttributes="Bold" TextColor="White" FontSize="19" VerticalTextAlignment="End"/>
+                    <Label Grid.Column="1" Grid.Row="1" Text="Jane.doe@gmail.com" TextColor="White" VerticalTextAlignment="Start"/>
+
+                    <Entry Grid.ColumnSpan="2" Margin="0,20,0,0" Grid.Row="2" IsPassword="True" Placeholder="********" HeightRequest="50"/>
+                    <buttons:SfButton Grid.ColumnSpan="2" Grid.Row="3" Text="Continue" Style="{StaticResource Highlighted}" />
+                    <Label Grid.ColumnSpan="2" Grid.Row="4" Text="Forgot your password?" TextColor="{StaticResource MainColor}" FontAttributes="Bold"/>
+
+                </Grid>
+            </Frame>
+         </Grid>
+    </ContentPage.Content>
+</ContentPage>

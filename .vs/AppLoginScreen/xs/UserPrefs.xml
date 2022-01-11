@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{2E5CFD59-02E3-4F1B-8861-1E0A315AD467}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppLoginScreen/App.xaml.cs">
+    <Files>
+      <File FileName="AppLoginScreen/SignInPage.xaml" Line="36" Column="29" />
+      <File FileName="AppLoginScreen/SignInPage.xaml.cs" />
+      <File FileName="AppLoginScreen/App.xaml.cs" Line="13" Column="38" />
+      <File FileName="AppLoginScreen/App.xaml" />
+      <File FileName="AppLoginScreen/LogInPage.xaml" />
+      <File FileName="AppLoginScreen/LogInPage.xaml.cs" />
+      <File FileName="AppLoginScreen.iOS/Info.plist" />
+      <File FileName="AppLoginScreen.iOS/Entitlements.plist" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AppLoginScreen" expanded="True" selected="True">
+            <Node name="AppLoginScreen" expanded="True">
+              <Node name="App.xaml" expanded="True" />
+              <Node name="LogInPage.xaml" expanded="True" />
+            </Node>
+            <Node name="AppLoginScreen.Android" expanded="True" />
+            <Node name="AppLoginScreen.iOS" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AppLoginScreen.Android PreferredExecutionTarget="Android.lrr_-_pixel_2" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AppLoginScreen.iOS automaticSigning="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F2F79E18-52A0-4279-B7A1-E4E905F7CD6A" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

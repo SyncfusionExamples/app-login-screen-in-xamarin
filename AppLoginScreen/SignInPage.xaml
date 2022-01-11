@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.MaskedEdit;assembly=Syncfusion.SfMaskedEdit.XForms"
+             xmlns:syncmaskededit="clr-namespace:Syncfusion.XForms.MaskedEdit;assembly=Syncfusion.SfMaskedEdit.XForms"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="AppLoginScreen.SignInPage"
+             BackgroundColor="#181415">
+    <ContentPage.Content>
+        <!-- Main structure-->
+        <Grid RowDefinitions="*,Auto">
+            <!--Main image-->
+            <Image Grid.RowSpan="2" Source="Model" VerticalOptions="Start" Aspect="AspectFit"/>
+            <!-- Title-->
+            <Label Grid.Row="0" Text="Hi!" FontSize="34" TextColor="White" VerticalOptions="End" FontAttributes="Bold" Padding="20,0,0,20"/>
+             <!--Information Frame-->
+            <Frame Grid.Row="1" HasShadow="False" Margin="15,0,15,50" VerticalOptions="FillAndExpand" CornerRadius="20" Opacity="0.9" BackgroundColor="#2e2b2c">
+                <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" RowSpacing="25" Padding="0,10,0,0">
+                    <!--Email validation with Syncfusion MasketEdit control-->
+                    <syncmaskededit:SfMaskedEdit Grid.Row="0" Watermark="Email" Mask="\w+@\w+\.\w+" MaskType="RegEx" HeightRequest="50"/>
+
+                    <!--Syncfusion Buttons control--> 
+                    <buttons:SfButton Grid.Row="1" Text="Continue" Style="{StaticResource Highlighted}"/>
+                    <Label Grid.Row="2" Text="or" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="White"/>
+                    <buttons:SfButton Grid.Row="3" ImageSource="Facebook" Text="Continue with Facebook" Style="{StaticResource SocialNetworks}" />
+                    <buttons:SfButton Grid.Row="4" ImageSource="Google" FontSize="17" Text="Continue with Google" Style="{StaticResource SocialNetworks}"/>
+                    <buttons:SfButton Grid.Row="5" ImageSource="Apple" FontSize="17" Text="Continue with Apple" Style="{StaticResource SocialNetworks}" />
+
+                    <Label Grid.Row="6" Margin="0,10,0,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Don't have an account? " TextColor="White"/>
+                                <Span Text="Sign Up" TextColor="{StaticResource MainColor}" FontAttributes="Bold"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                    <Label Grid.Row="7" Text="Forget your password?" TextColor="{StaticResource MainColor}" FontAttributes="Bold"/>
+
+                </Grid>
+            </Frame>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
